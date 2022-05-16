@@ -21,7 +21,7 @@ suspend fun send(
       // fixme
       ByteArray(0),
       Regex("§.").replace(sender.name, ""),
-      Regex("§.").replace(sender.displayName, "")
+      Regex("§.").replace(sender.displayName, "") //老套路了（）
     ),
     id = msgId.toByteArray(),
     chain = chain
