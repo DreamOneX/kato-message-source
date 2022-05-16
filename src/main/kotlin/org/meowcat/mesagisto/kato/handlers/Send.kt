@@ -20,8 +20,8 @@ suspend fun send(
     profile = Profile(
       // fixme
       ByteArray(0),
-      sender.name,
-      sender.displayName
+      Regex("§.").replace(sender.name, ""),
+      Regex("§.").replace(sender.displayName, "")
     ),
     id = msgId.toByteArray(),
     chain = chain
